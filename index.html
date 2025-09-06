@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="avatar" aria-hidden="true">
+        <!-- Simple cartoon avatar SVG -->
+        <svg viewBox="0 0 120 120" role="img" aria-label="cartoon avatar">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#ffd7e9"/>
+              <stop offset="1" stop-color="#ffd2b2"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="120" height="120" rx="20" fill="white" opacity="0.06"/>
+          <circle cx="60" cy="50" r="28" fill="url(#g)"/>
+          <rect x="32" y="70" width="56" height="22" rx="10" fill="#6d46ff"/>
+          <circle cx="50" cy="48" r="3" fill="#2b2b2b"/>
+          <circle cx="70" cy="48" r="3" fill="#2b2b2b"/>
+          <path d="M48 58 q12 10 24 0" stroke="#2b2b2b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <h1>NAFIYA SM</h1>
+        <p>🖥️ Student • Frontend learner • Creative Portfolio</p>
+      </div>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero card" aria-labelledby="hero-title">
+    <div class="hero-left">
+      <span class="tag">🖥️ Portfolio • Student</span>
+      <h2 id="hero-title">Hi — I'm Nafiya. I build friendly, creative frontends.</h2>
+      <p class="muted">A responsive portfolio template showcasing projects, skills, and contact. Built with HTML, CSS, and JavaScript. Replace placeholder text & images with your real content.</p>
+      <div style="margin-top:.8rem;">
+        <button class="cta" onclick="scrollToSection('projects')">View Projects 📁</button>
+        <button class="ghost" style="margin-left:.5rem" onclick="alert('Thanks! You can copy this template and customize it.')">Download</button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="stats">
+        <div class="tiny">Skills</div>
+        <b>HTML • CSS • JS</b>
+        <div style="font-size:.82rem;color:var(--muted);margin-top:.25rem">2+ projects • Responsive</div>
+      </div>
+      <div class="stats" style="padding:.6rem .8rem">
+        <div class="tiny">Availability</div>
+        <b>Open to projects</b>
+        <div class="tiny" style="margin-top:.25rem">Freelance • Internship</div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- LEFT COLUMN -->
+    <div>
+      <section id="about" class="card" aria-labelledby="about-heading">
+        <h3 id="about-heading">About • 🧠</h3>
+        <div class="about-grid">
+          <div class="bio">
+            <p class="muted">Hello — I'm Nafiya, a BSc Data Science student passionate about frontend development and storytelling through design. I enjoy turning ideas into polished, user-friendly pages, and I use projects to learn new skills.</p>
+            <p class="tiny" style="margin-top:.6rem"><strong>Education:</strong> Islamia Women's Arts and Science College — BSc Data Science (2nd year)</p>
+          </div>
+
+          <div class="meta">
+            <div class="pill">🖥️ Frontend</div>
+            <div class="pill">📁 Projects</div>
+            <div class="pill">🧠 Learning DSA</div>
+            <div class="pill">✍️ Diary & Writing</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="card" aria-labelledby="projects-heading" style="margin-top:1rem;">
+        <h3 id="projects-heading">Projects • 📁</h3>
+        <p class="tiny muted">Click "Details" to see a short description. Replace these placeholders with real project images and links.</p>
+
+        <div class="projects-grid" style="margin-top:.75rem">
+          <!-- Project 1 -->
+          <article class="project">
+            <div class="proj-thumb">P1</div>
+            <div class="proj-info">
+              <h4>Portfolio Template</h4>
+              <div class="tiny muted">HTML • CSS • JS</div>
+              <div class="proj-actions">
+                <button class="btn" onclick="openModal('Portfolio Template','A clean and responsive portfolio template built to showcase projects and skills. Features: smooth nav, responsive grid, modal project details.')">Details</button>
+                <button class="ghost" onclick="alert('Project link copied! (simulate)')">Copy Link</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project">
+            <div class="proj-thumb">G2</div>
+            <div class="proj-info">
+              <h4>Diary Web App (Mock)</h4>
+              <div class="tiny muted">HTML • JS</div>
+              <div class="proj-actions">
+                <button class="btn" onclick="openModal('Diary Web App','A simple diary-style web app mockup with save and local storage features. Ideal for learning DOM & storage.')">Details</button>
+                <button class="ghost" onclick="alert('Demo started (simulate)')">Demo</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project">
+            <div class="proj-thumb">D3</div>
+            <div class="proj-info">
+              <h4>Game UI (Study)</h4>
+              <div class="tiny muted">Canvas • JS</div>
+              <div class="proj-actions">
+                <button class="btn" onclick="openModal('Game UI (Study)','A small UI/UX experiment for an online game project; focused on responsive HUD and controls.')">Details</button>
+                <button class="ghost" onclick="alert('Open GitHub (simulate)')">GitHub</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project">
+            <div class="proj-thumb">A4</div>
+            <div class="proj-info">
+              <h4>CSS Art — Avatar</h4>
+              <div class="tiny muted">CSS • Art</div>
+              <div class="proj-actions">
+                <button class="btn" onclick="openModal('CSS Art — Avatar','A tiny CSS art project where a cartoon avatar is built using pure HTML and CSS shapes as a learning exercise.')">Details</button>
+                <button class="ghost" onclick="alert('Viewed image (simulate)')">View</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="results" class="card" style="margin-top:1rem;">
+        <h3>Results & Screenshots 📸</h3>
+        <p class="tiny muted">Outcome: Fully functional portfolio template demonstrating frontend fundamentals (structure, styling, interactivity). Screenshots would show the homepage, about, projects, and contact sections.</p>
+      </section>
+
+      <section id="conclusion" class="card" style="margin-top:1rem;">
+        <h3>Conclusion</h3>
+        <p class="muted tiny">Learnings: Gained frontend development knowledge. Future scope: chatbot integration, backend for dynamic content, SEO improvements.</p>
+      </section>
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside>
+      <div class="card">
+        <h3>Skills • 🧠</h3>
+        <div class="skills" style="margin-top:.5rem">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Responsive</div>
+          <div class="skill">Git</div>
+          <div class="skill">DSA Basics</div>
+        </div>
+
+        <hr style="margin:12px 0;border:0;border-top:1px solid rgba(16,16,24,0.04)">
+
+        <h3>Contact • ✉️</h3>
+        <p class="tiny muted">Want to collaborate or see project files?</p>
+        <div class="contact-actions" id="contact">
+          <button class="btn" onclick="contactEmail()">Email Me</button>
+          <button class="ghost" onclick="contactWhatsApp()">Message (WhatsApp)</button>
+          <button class="ghost" 
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:1rem;">
+        <h3>Quick Info</h3>
+        <p class="tiny muted"><strong>Location:</strong> India</p>
+        <p class="tiny muted"><strong>Interests:</strong> Writing diary, drawing, online games</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nafiya Ahmed — Built with ❤️ • Purple-White theme</p>
+  </footer>
+</div>
+
+<!-- Modal -->
+<div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal" role="document">
+    <h3 id="modalTitle"></h3>
+    <p id="modalBody" class="muted"></p>
+    <div style="margin-top:.8rem;text-align:right">
+      <button class="ghost" onclick="closeModal()">Close</button>
+      <button class="btn" style="margin-left:.5rem" onclick="alert('Thanks for checking the project!')">Say Thanks</button>
+    </div>
+  </div>
+</div>
